@@ -160,7 +160,7 @@ type Job struct {
 
 // Second method set Second key for job sched.
 func (j *Job) Second(n int) *Job {
-	if n < 0 || n > 59 {
+	if n < 0 {
 		panic(ErrRangeSecond)
 	}
 
